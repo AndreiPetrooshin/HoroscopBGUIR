@@ -64,18 +64,18 @@ public class LoaderActivity extends AsyncTask<Void, Void, Void> {
     @Override
     protected void onPostExecute(Void aVoid) {
         if(arrayList.size() < 12)return;
-        MainActivity.oven.setText(arrayList.get(0));
-        MainActivity.telec.setText(arrayList.get(1));
-        MainActivity.blizneci.setText(arrayList.get(2));
-        MainActivity.rak.setText(arrayList.get(3));
-        MainActivity.lev.setText(arrayList.get(4));
-        MainActivity.deva.setText(arrayList.get(5));
-        MainActivity.vesi.setText(arrayList.get(6));
-        MainActivity.scorpion.setText(arrayList.get(7));
-        MainActivity.strelec.setText(arrayList.get(8));
-        MainActivity.kozerog.setText(arrayList.get(9));
-        MainActivity.vodolei.setText(arrayList.get(10));
-        MainActivity.ribi.setText(arrayList.get(11));
+        MainActivity.oven.setText("ОВНЫ: " + arrayList.get(0));
+        MainActivity.telec.setText("ТЕЛЬЦЫ: " +arrayList.get(1));
+        MainActivity.blizneci.setText("БЛИЗНЕЦЫ: " +arrayList.get(2));
+        MainActivity.rak.setText("РАКИ: " +arrayList.get(3));
+        MainActivity.lev.setText("ЛЬВЫ: " +arrayList.get(4));
+        MainActivity.deva.setText("ДЕВЫ: " +arrayList.get(5));
+        MainActivity.vesi.setText("ВЕСЫ: " +arrayList.get(6));
+        MainActivity.scorpion.setText("СКОРПИОНЫ: " +arrayList.get(7));
+        MainActivity.strelec.setText("СТРЕЛЬЦЫ: " +arrayList.get(8));
+        MainActivity.kozerog.setText("КОЗЕРОГИ: " +arrayList.get(9));
+        MainActivity.vodolei.setText("ВОДОЛЕИИ: " +arrayList.get(10));
+        MainActivity.ribi.setText("РЫБЫ: " +arrayList.get(11));
         MainActivity.textToday.setText("Гороскоп на: " + textToday);
     }
 
